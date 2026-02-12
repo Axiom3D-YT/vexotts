@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 4200
 
 # Command to run the application
-CMD ["uvicorn", "bot:app", "--host", "0.0.0.0", "--port", "4200"]
+CMD ["python", "main.py"]
