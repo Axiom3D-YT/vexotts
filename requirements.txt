@@ -4,3 +4,4 @@ uvicorn
 gTTS
 python-dotenv
 pydantic
+pynacl
