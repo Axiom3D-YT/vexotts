@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   vexotts:
-    build: .
+    image: ghcr.io/axiom3d-yt/vexotts:latest
     container_name: vexotts
     restart: unless-stopped
     ports:

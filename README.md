@@ -52,10 +52,21 @@ The bot exposes a POST endpoint to trigger TTS:
 }
 ```
 
-## Contributing
+### Pulling from GHCR
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+If you don't want to build the image locally, you can pull the pre-built AMD64 image from the GitHub Container Registry:
 
-## License
+1. Authenticate with GHCR (if the repository is private):
+   ```bash
+   echo $GITHUB_TOKEN | docker login ghcr.io -u YOUR_GITHUB_USERNAME --password-stdin
+   ```
 
-[MIT](LICENSE)
+2. Pull the latest image:
+   ```bash
+   docker pull ghcr.io/axiom3d-yt/vexotts:latest
+   ```
+
+3. Update your `docker-compose.yml` to use the image and run:
+   ```bash
+   docker-compose up -d
+   ```
