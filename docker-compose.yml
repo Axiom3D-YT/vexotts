@@ -6,7 +6,7 @@ services:
     container_name: vexotts
     restart: unless-stopped
     ports:
-      - "8000:8000"
+      - "4200:4200"
     env_file:
       - .env
     # Optional: Volume for persistence if needed in future
